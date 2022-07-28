@@ -29,3 +29,9 @@ span[boader="none"]{
   border: 0px black solid;
   background-color: inherit; 
 }
+
+
+footer{
+position: absolute;
+bottom: 0px;
+}
