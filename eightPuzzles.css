@@ -1,0 +1,31 @@
+#board{
+  border: 1px black solid;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  transition: transform 1s;
+  background-color: red;
+}
+.cell {
+  border: 1px black solid;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  background-color: brown;
+  
+}
+
+
+.cell span{
+  display: inline-block;
+  border: 1px black solid;
+  background-color: purple;
+  color: white;
+  
+}
+
+
+span[boader="none"]{
+  border: 0px black solid;
+  background-color: inherit; 
+}

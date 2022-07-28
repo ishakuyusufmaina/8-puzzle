@@ -1,0 +1,13 @@
+#finishedModal {
+  text-align: center;
+  border: 1px black solid;
+  background-color:white;
+  margin-left: 10px;
+  
+}
+
+/.cell {
+  color:white;
+  background-color: rebeccapurple;
+  
+}
