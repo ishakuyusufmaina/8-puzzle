@@ -16,7 +16,7 @@
   <title>Eight Puzzle</title>
 </head>
 <body>
-  <div id="root" class="bg-dark text-white" >
+  <div id="root">
    
   </div>
   
@@ -59,7 +59,7 @@
     
     renderFinished(time, redoCallBack){
       let modal= $(`
-      <div id="finishedModal" style="display:none; position:absolute;" class="bg-dark">
+      <div id="finishedModal" style="display:none; position:absolute;" class="bg-dark text-light">
               <div ><span style="color:green">✓</span></div>
               <p>Done in ${time}</p>
               <button id="redo" class="btn-primary">Redo</button>
