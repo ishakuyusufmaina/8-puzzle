@@ -1,3 +1,7 @@
+body{
+background-image: url("bg.jpg");
+}
+
 #board{
   border: 1px black solid;
   text-align: center;
@@ -34,4 +38,6 @@ span[boader="none"]{
 footer{
 position: absolute;
 bottom: 0px;
+background-color: rgba(0,0,0, .5);
+color: white;
 }
