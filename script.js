@@ -1,10 +1,44 @@
-  class EightPuzzles {
+//utility functions
+function randint(low, high) {
+    
+    let num = Math.random();
+    num = num*high + 1;
+    num = Math.floor(num);
+    if(num < low) {
+    num =  randint(low, high);
+    }
+      return num
+  }
+  
+  function choose(arr, start){
+    start = (start)? start : 0;
+    let randIndex = randint(start, arr.length);
+    return arr[randIndex-1];    
+  }
+  
+  function shuffle(arr, start){
+    
+    if (start < arr.length){
+      let randElm = choose(arr, start);
+      let randI = randint(0, arr.length);
+      let index = arr.indexOf(randElm);
+      arr[index] = arr[randI];
+      arr[randI] = randElm;
+      start++;
+      shuffle(arr, start);
+    }
+  }
+//**************************
+
+class EightPuzzles {
     constructor(){
       this.state= [
       7, 2, 4,
       5, 0, 6,
       8, 3, 1
       ];
+      //shuffle state
+      shuffle (this.state, 0);
       this.goalState = [
       0,1,2,
       3,4,5,
