@@ -22,8 +22,8 @@ function randint(low, high) {
       let randElm = choose(arr, start);
       let randI = randint(0, arr.length);
       let index = arr.indexOf(randElm);
-      arr[index] = arr[randI];
-      arr[randI] = randElm;
+      arr[index] = arr[randI-1];
+      arr[randI-1] = randElm;
       start++;
       shuffle(arr, start);
     }
