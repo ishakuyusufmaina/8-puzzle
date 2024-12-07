@@ -12,9 +12,12 @@ background-image: url("bg.jpg");
 }
 .cell {
   border: 1px black solid;
-  display: inline-block;
-  margin: auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
   background-color: brown;
   
 }
